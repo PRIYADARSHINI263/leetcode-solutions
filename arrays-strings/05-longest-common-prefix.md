@@ -1,32 +1,30 @@
 # Longest Common Prefix
 
 ## Problem
-Given an array of strings, find the longest common prefix shared by all the strings. If there is no common prefix, return an empty string.
+
+Find the longest common prefix shared by all strings in an array.
 
 ## Approach
-- Take the first string as the initial prefix.
-- Compare it with each remaining string character by character.
-- Keep only the matching characters as the new prefix.
-- Repeat until all strings are checked.
 
-## Test Cases
+Start with the first string as the prefix. Compare it with each remaining string and reduce the prefix until it matches the beginning of the current string.
 
-### Test Case 1
-Input:
-`["flower", "flow", "flight"]`
+## Example
 
-Output:
-`fl`
-
-### Test Case 2
-Input:
-`["dog", "racecar", "car"]`
-
-Output:
-`""`
-
-## Output
+**Input:**
 
 ```text
-Test Case 1: fl
-Test Case 2:
+["flower", "flow", "flight"]
+```
+
+**Output:**
+
+```text
+"fl"
+```
+
+## Complexity
+
+* **Time Complexity:** O(n × m)
+* **Space Complexity:** O(1)
+
+Where `n` is the number of strings and `m` is the length of the shortest string.
